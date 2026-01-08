@@ -264,6 +264,8 @@ button
   font-size: 18px;
   border: none;
   border-radius: 9px;
+  box-shadow: 0 10px 20px rgba(23, 17, 17, 0.1);
+
   font-family: 'Trebuchet MS', sans-serif;
   color: white;
   cursor: pointer;
