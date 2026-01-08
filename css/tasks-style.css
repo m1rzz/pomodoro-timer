@@ -6,13 +6,12 @@ body
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #bfe6ff 0%, rgb(241, 255, 247) 100%);
+  background: linear-gradient(135deg, #DCA1BE 0%, #ffefe1 100%);
 }
 
 .tasks-container 
 {
-  font-family: 'Trebuchet MS', sans-serif;
-  background: rgb(238, 247, 255);
+  background: #F7DDE6;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -27,7 +26,7 @@ body
 
 .back-btn 
 {
-  background-color: #9fb3df;
+  background-color: #e391ba;
   color: white;
   padding: 8px 22px;
   border: none;
@@ -47,7 +46,7 @@ body
 .tasks-header 
 {
   display: flex;
-  color: #5a7390;
+  color: #795360;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
@@ -66,16 +65,16 @@ body
 {
   flex: 1;
   padding: 12px;
-  border: 2px dashed #cedde5;
+  border: 2px dashed #d3aac0;
   border-radius: 5px;
   font-size: 16px;
   font-family: 'Trebuchet MS', sans-serif;
-  color: #4b5781;
+  color: #87516f;
 }
 
 .add-task-btn 
 {
-  background-color: #b1d5c1;
+  background-color: #bed59f;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -100,7 +99,7 @@ body
 
 .task-item 
 {
-  background: #f9fdff;
+  background: #fceef3;
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 9px;
@@ -115,7 +114,7 @@ body
   width: 20px;
   height: 20px;
   cursor: pointer;
-  accent-color: #9cadcd;
+  accent-color: #e2afc1;
 }
 
 .task-text 
@@ -134,7 +133,7 @@ body
 .delete-btn 
 {
   font-family: 'Trebuchet MS', sans-serif;
-  background-color: #e2bdcd;
+  background-color: #b6878a;
   color: white;
   padding: 8px 16px;
   border: none;

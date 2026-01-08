@@ -6,14 +6,14 @@ body
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #b0d9f2 0%, white 100%);
+  background: linear-gradient(135deg, #DCA1BE 0%, #ffefe1 100%);
   margin: 0;
   padding: 15px;
 }
 
 .home-container
 {
-  background: #e6f7ff;
+  background: #F7DDE6;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -23,19 +23,19 @@ body
 
 h1
 {
-  color: #486a92;
+  color: #D95F8A;
   font-size: 40px;
 }
 
 .subtitle
 {
-  color: #839ab4;
+  color: #bf93a2;
   font-size: 23px;
 }
 
 .info
 {
-  background: #f9fdff;
+  background: #feedf3;
   padding: 25px;
   border-radius: 9px;
   margin: 20px 0;
@@ -44,7 +44,7 @@ h1
 
 .info h2
 {
-  color: #307183;
+  color: #d47798;
   line-height: 1.6;
   margin-bottom: 12px;
 }
@@ -58,14 +58,14 @@ h1
 
 .info-benefits li, .info p
 {
-  color: #6e9cb4;
+  color: #9b7784;
   font-size: 17px;
   padding: 8px 0;
 }
 
 .start-btn
 {
-  background-color: #7cb1d1;
+  background-color: #e391ba;
   color: white;
   font-size: 25px;
   font-family: 'Trebuchet MS', Arial, sans-serif;

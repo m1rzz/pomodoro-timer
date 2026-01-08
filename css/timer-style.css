@@ -6,7 +6,7 @@ body
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #b0d9f2 0%, white 100%);
+  background: linear-gradient(135deg, #DCA1BE 0%, #ffefe1 100%);
   margin: 0;
 }
 
@@ -18,7 +18,7 @@ body
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #b9defa;
+  background-color: #e391ba;
   color: white;
   font-size: 24px;
   border: none;
@@ -46,7 +46,7 @@ body
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #b9defa;
+  background-color: #e391ba;
   color: white;
   font-size: 30px;
   border: none;
@@ -75,7 +75,7 @@ body
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #b9defa;
+  background-color: #e391ba;
   color: white;
   font-size: 28px;
   border: none;
@@ -103,7 +103,7 @@ body
   left: -320px;
   width: 280px;
   height: 100vh;
-  background: rgb(238, 247, 255);
+  background: #f8cbe0;
   box-shadow: 2px 0 10px rgba(39, 64, 87, 0.1);
   transition: left 0.3s ease;
   z-index: 999;
@@ -120,11 +120,11 @@ body
   margin-top: 100%;
 }
 
-.sound-panel h3
+.sound-panel h2
 {
-  color: #83a1c5;
+  color: #563746;
   margin-bottom: 130px;
-  margin-top: -100px;
+  margin-top: -80px;
   font-size: 30px;
   display: flex;
   flex-direction: column;
@@ -139,7 +139,7 @@ body
 .sound-setting-group label
 {
   display: block;
-  color: #60708f;
+  color: #684757;
   font-size: 18px;
   margin-bottom: 8px;
   text-align: left;
@@ -151,9 +151,9 @@ body
   width: 100%;
   padding: 8px;
   border-radius: 5px;
-  border: 2px dashed #cedde4;
-  background: white;
-  color: #30274b;
+  border: 2px dashed #e4acc7;
+  background: #ffdaed;
+  color: #4b2740;
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 16px;
   cursor: pointer;
@@ -163,12 +163,13 @@ body
 {
   width: 100%;
   cursor: pointer;
+  accent-color: #b57598;
 }
 
 .test-sound-btn
 {
   width: 100%;
-  background-color: #9FB3DF;
+  background-color: #e391ba;
   color: white;
   padding: 10px;
   border: none;
@@ -191,7 +192,7 @@ body
   text-align: center;
   margin-bottom: 2rem;
   font-size: larger;
-  color: #66778b;
+  color: #cb6b8d;
 }
 
 .timer-container 
@@ -213,14 +214,13 @@ body
 .progress-ring-circle-bg
 {
   fill: none;
-  stroke: #e0e0e0;
+  stroke: #f8e0eb;
   stroke-width: 8;
 }
 
 .progress-ring-circle
 {
   fill: none;
-  stroke: #2d2547;
   stroke-width: 8;
   stroke-linecap: round;
   transition: stroke-dashoffset 1s linear, stroke 0.3s ease;
@@ -235,7 +235,7 @@ body
 
 .container 
 {
-  background: rgb(238, 247, 255);
+  background: #F7DDE6;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -264,8 +264,6 @@ button
   font-size: 18px;
   border: none;
   border-radius: 9px;
-  box-shadow: 0 10px 20px rgba(23, 17, 17, 0.1);
-
   font-family: 'Trebuchet MS', sans-serif;
   color: white;
   cursor: pointer;
@@ -279,22 +277,22 @@ button:hover
 
 #start 
 {
-  background-color: #98c2bd;
+  background-color: #bed59f;
 }
 
 #stop 
 {
-  background-color: #e2bdcd;
+  background-color: #ae9dd7;
 }
 
 #reset 
 {
-  background-color: #9FB3DF;
+  background-color: #df9dba;
 }
 
 #save 
 {
-  background-color: #bfd2df;
+  background-color: #eca4cc;
 }
 
 .settings 
@@ -302,15 +300,15 @@ button:hover
   box-shadow: 0 4px 20px rgba(138, 138, 138, 0.1);
   margin-top: 20px;
   padding: 10px;
-  background: #f9fdff;
-  color: #9cadcd;
+  background: #f9e5ec;
+  color: #b57598;
   border-radius: 9px;
 }
 
 .setting-group 
 {
   margin: 10px 0;
-  color: #68608f;
+  color: #d28ab1;
 }
 
 label 
@@ -329,8 +327,8 @@ input
   font-size: 15px;
   font-family: 'Verdana', sans-serif;
   border-radius: 5px;
-  border: 2px dashed #cedde5;
-  color: #526277;
+  border: 2px dashed #f1cbe0;
+  color: #b57598;
 }
 
 .sound-toggle
@@ -355,7 +353,7 @@ input
   appearance: none;
   width: 12px;
   height: 12px;
-  border: 2px double #ccc;
+  border: 2px double #b57598;
   border-radius: 50%;
   transition: 0.3s;
   cursor: pointer;
@@ -363,8 +361,8 @@ input
 
 .sound-toggle input[type="checkbox"]:checked 
 {
-  background-color: #9cadcd;
-  border-color: #9cadcd;
+  background-color: #b57598;
+  border-color: #b57598;
 }
 
 .session-type 
@@ -372,10 +370,5 @@ input
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #8a8793;
-}
-
-#session-indicator 
-{
-  color: #6ca9ab;
+  color: #867080;
 }

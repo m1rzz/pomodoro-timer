@@ -89,9 +89,9 @@ function updateProgress()
   progressCircle.style.strokeDashoffset = offset;
 
   if (isWorkSession)
-    progressCircle.style.stroke = '#a6b9cfff';
+    progressCircle.style.stroke = '#d7a4bbff';
   else 
-    progressCircle.style.stroke = '#b0c7ddff';
+    progressCircle.style.stroke = '#a46c8bff';
 }
 
 function startTimer() 
@@ -166,9 +166,9 @@ function updateDisplay()
 function updateSessionIndicator() 
 {
   sessionIndicator.textContent = isWorkSession ? 'Work' : 'Break';
-  sessionIndicator.style.color = isWorkSession ? '#4d4569ff' : '#85a6beff';
+  sessionIndicator.style.color = isWorkSession ? '#b48575ff' : '#c586a9ff';
 
-  timerDisplay.style.color = isWorkSession ? '#4c6582ff' : '#7192aaff';
+  timerDisplay.style.color = isWorkSession ? '#5f5449ff' : '#965f7dff';
 }
 
 function saveSettings() 
@@ -176,12 +176,12 @@ function saveSettings()
   const workMinutes = parseInt(workTimeInput.value);
   const breakMinutes = parseInt(breakTimeInput.value);
 
-  if (isNaN(workMinutes) || isNaN(breakMinutes) ||
-    workMinutes < 1 || breakMinutes < 1) 
-  {
-    alert('Please enter valid numbers (1 or higher)');
-    return;
-  }
+  // if (isNaN(workMinutes) || isNaN(breakMinutes) ||
+  //   workMinutes < 1 || breakMinutes < 1) 
+  // {
+  //   alert('Please enter valid numbers (1 or higher)');
+  //   return;
+  // }
 
   workDuration = workMinutes * 60;
   breakDuration = breakMinutes * 60;
