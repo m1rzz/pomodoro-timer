@@ -1,0 +1,379 @@
+body 
+{
+  font-family: 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b0d9f2 0%, white 100%);
+  margin: 0;
+}
+
+.sound-settings-btn
+{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #b9defa;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.sound-settings-btn:hover
+{
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.info-btn
+{
+  position: fixed;
+  top: 24px;
+  left: 94px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #b9defa;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-decoration: none;
+}
+
+.info-btn:hover
+{
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.tasks-btn 
+{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #b9defa;
+  color: white;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-decoration: none;
+}
+
+.tasks-btn:hover 
+{
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.sound-panel
+{
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 280px;
+  height: 100vh;
+  background: rgb(238, 247, 255);
+  box-shadow: 2px 0 10px rgba(39, 64, 87, 0.1);
+  transition: left 0.3s ease;
+  z-index: 999;
+  padding: 20px;
+}
+
+.sound-panel.open
+{
+  left: 0;
+}
+
+.sound-panel-content
+{
+  margin-top: 100%;
+}
+
+.sound-panel h3
+{
+  color: #83a1c5;
+  margin-bottom: 130px;
+  margin-top: -100px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sound-setting-group
+{
+  margin: 20px 0;
+}
+
+.sound-setting-group label
+{
+  display: block;
+  color: #60708f;
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-align: left;
+  width: 100%;
+}
+
+#alarm-select
+{
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px dashed #cedde4;
+  background: white;
+  color: #30274b;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#volume-slider
+{
+  width: 100%;
+  cursor: pointer;
+}
+
+.test-sound-btn
+{
+  width: 100%;
+  background-color: #9FB3DF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: opacity 0.3s;
+}
+
+.test-sound-btn:hover
+{
+  opacity: 0.7;
+}
+
+.title
+{
+  display: flex;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: larger;
+  color: #66778b;
+}
+
+.timer-container 
+{
+  position: relative;
+  display: inline-block;
+}
+
+.progress-ring
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 350px;
+  height: 350px;
+}
+
+.progress-ring-circle-bg
+{
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 8;
+}
+
+.progress-ring-circle
+{
+  fill: none;
+  stroke: #2d2547;
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s linear, stroke 0.3s ease;
+}
+
+.timer-inner
+{
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+}
+
+.container 
+{
+  background: rgb(238, 247, 255);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+.timer 
+{
+  margin: 20px 0;
+  color: #2d2547;
+  font-size: 72px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+}
+
+.controls 
+{
+  margin: 20px 0;
+}
+
+button 
+{
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 9px;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+button:hover
+{
+  opacity: 0.7;
+}
+
+#start 
+{
+  background-color: #98c2bd;
+}
+
+#stop 
+{
+  background-color: #e2bdcd;
+}
+
+#reset 
+{
+  background-color: #9FB3DF;
+}
+
+#save 
+{
+  background-color: #bfd2df;
+}
+
+.settings 
+{
+  box-shadow: 0 4px 20px rgba(138, 138, 138, 0.1);
+  margin-top: 20px;
+  padding: 10px;
+  background: #f9fdff;
+  color: #9cadcd;
+  border-radius: 9px;
+}
+
+.setting-group 
+{
+  margin: 10px 0;
+  color: #68608f;
+}
+
+label 
+{
+  display: inline-block;
+  width: 140px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+input 
+{
+  width: 40px;
+  padding: 3px;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Verdana', sans-serif;
+  border-radius: 5px;
+  border: 2px dashed #cedde5;
+  color: #526277;
+}
+
+.sound-toggle
+{
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sound-toggle label
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.sound-toggle input[type="checkbox"]
+{
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border: 2px double #ccc;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sound-toggle input[type="checkbox"]:checked 
+{
+  background-color: #9cadcd;
+  border-color: #9cadcd;
+}
+
+.session-type 
+{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #8a8793;
+}
+
+#session-indicator 
+{
+  color: #6ca9ab;
+}
